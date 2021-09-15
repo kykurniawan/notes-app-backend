@@ -3,13 +3,13 @@
 exports.shorthands = undefined
 
 exports.up = (pgm) => {
-    pgm.addColumn('notes', {
+    pgm.addColumn("notes", {
         owner: {
-            type: 'VARCHAR(50)',
+            type: "VARCHAR(50)",
         },
     })
 }
 
 exports.down = (pgm) => {
-    pgm.dropColumn('notes', 'owner')
+    pgm.dropColumn("notes", "owner")
 }
